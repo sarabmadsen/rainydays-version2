@@ -33,7 +33,6 @@ nav {
 
 li {
   display: inline-block;
-  color: white;
 }
 
 li a {
@@ -42,25 +41,32 @@ li a {
   text-decoration: none;
 }
 
+i {
+  color: white;
+}
+
 /*mobile styles*/
 
 @media only screen and (max-width: 659px) {
   body {
-    font-size: 15pt;
+    font-size: 1.25rem;
   }
   h1 {
-    font-size: 38pt;
+    font-size: 3.16rem;
   }
   h2 {
-    font-size: 25pt;
+    font-size: 2rem;
   }
   h3 {
-    font-size: 20pt;
+    font-size: 1.6rem;
   }
   li {
-    font-size: 20px;
+    font-size: 1.6rem;
     padding: 5px;
     margin: 5px;
+  }
+  body {
+    background-color: violet;
   }
 }
 
@@ -68,46 +74,45 @@ li a {
 
 @media only screen and (min-width: 660px) {
   body {
-    font-size: 20pt;
+    font-size: 1.6rem;
   }
   h1 {
-    font-size: 43pt;
+    font-size: 3.58rem;
   }
   h2 {
-    font-size: 30pt;
+    font-size: 2.5rem;
   }
   h3 {
-    font-size: 25pt;
+    font-size: 2.1rem;
   }
   a:hover {
     border: 2px #8f3e00;
     color: #8f3e00;
   }
   li {
-    font-size: 30px;
+    font-size: 2.5rem;
     padding: 10px;
     margin: 10px;
   }
-
   nav a {
     padding: 10px;
   }
-
   nav i {
     padding: 10px;
   }
-
   nav a:hover {
     background-color: #8f3e00;
     border-radius: 20px;
     padding: 10px;
     color: white;
   }
-
   nav i:hover {
     background-color: #8f3e00;
     border-radius: 20px;
     padding: 10px;
     color: white;
+  }
+  body {
+    background-color: tomato;
   }
 }
