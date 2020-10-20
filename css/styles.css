@@ -1,0 +1,93 @@
+/*global styles*/
+
+@font-face {
+  font-family: "Roadgeek 2005 Mittelschrift";
+  src: url("roadgeek-2005-mittelschrift.ttf") format("ttf");
+}
+
+body {
+  font-family: "roadgeek-2005-mittelschrift", Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+h2 {
+  font-weight: normal;
+}
+
+h3 {
+  font-weight: normal;
+}
+
+a {
+  border: 2px #0b3a40;
+  color: #0b3a40;
+}
+
+nav {
+  background-color: #0b3a40;
+}
+
+li {
+  display: inline-block;
+  color: white;
+}
+
+li a {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/*mobile styles*/
+
+body {
+  font-size: 15pt;
+}
+
+h1 {
+  font-size: 38pt;
+}
+
+h2 {
+  font-size: 25pt;
+}
+
+h3 {
+  font-size: 20pt;
+}
+
+li {
+  font-size: 20px;
+  padding: 5px;
+  margin: 5px;
+}
+
+/*desktop styles*/
+
+@media only screen and (min-width: 660px) {
+  body {
+    font-size: 20pt;
+  }
+  h1 {
+    font-size: 43pt;
+  }
+  h2 {
+    font-size: 30pt;
+  }
+  h3 {
+    font-size: 25pt;
+  }
+  a:hover {
+    border: 2px #8f3e00;
+    color: #8f3e00;
+  }
+  li {
+    font-size: 30px;
+    padding: 10px;
+    margin: 10px;
+  }
+}
