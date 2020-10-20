@@ -45,6 +45,10 @@ i {
   color: white;
 }
 
+.current {
+  text-decoration: underline;
+}
+
 /*mobile styles*/
 
 @media only screen and (max-width: 659px) {
@@ -65,8 +69,19 @@ i {
     padding: 5px;
     margin: 5px;
   }
+  i {
+    font-size: 1.6rem;
+  }
   body {
     background-color: violet;
+  }
+
+  nav li {
+    display: none;
+  }
+
+  #hamburger-menu:checked ~ nav li {
+    display: inline-block;
   }
 }
 
@@ -93,6 +108,9 @@ i {
     font-size: 2.5rem;
     padding: 10px;
     margin: 10px;
+  }
+  i {
+    font-size: 2.5rem;
   }
   nav a {
     padding: 10px;
