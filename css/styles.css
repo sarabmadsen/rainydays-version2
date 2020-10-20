@@ -27,7 +27,16 @@ a {
   color: #0b3a40;
 }
 
-nav {
+.logo {
+  max-width: 600px;
+  margin: 0px auto;
+}
+
+header img {
+  width: 100%;
+}
+
+.menu {
   background-color: #0b3a40;
 }
 
@@ -71,16 +80,17 @@ i {
   }
   i {
     font-size: 1.6rem;
+    padding: 5px;
+    margin: 5px;
   }
   body {
     background-color: violet;
   }
-
-  nav li {
+  nav,
+  #hamburger-menu {
     display: none;
   }
-
-  #hamburger-menu:checked ~ nav li {
+  #hamburger-menu:checked ~ nav {
     display: inline-block;
   }
 }
@@ -115,7 +125,7 @@ i {
   nav a {
     padding: 10px;
   }
-  nav i {
+  .menu i {
     padding: 10px;
   }
   nav a:hover {
@@ -124,13 +134,14 @@ i {
     padding: 10px;
     color: white;
   }
-  nav i:hover {
+  .menu i:hover {
     background-color: #8f3e00;
     border-radius: 20px;
     padding: 10px;
     color: white;
   }
-  body {
-    background-color: tomato;
+  .hamburger-label,
+  #hamburger-menu {
+    display: none;
   }
 }
