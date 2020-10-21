@@ -84,7 +84,7 @@ i {
     margin: 5px;
   }
   body {
-    background-color: violet;
+    background-color: gray;
   }
   nav,
   #hamburger-menu {
@@ -92,6 +92,19 @@ i {
   }
   #hamburger-menu:checked ~ nav {
     display: inline-block;
+  }
+  .menu {
+    display: flex;
+    flex-direction: row;
+  }
+  .item1 {
+    flex: 6;
+  }
+  .item2 {
+    flex: 1;
+  }
+  .item3 {
+    flex: 1;
   }
 }
 
