@@ -55,12 +55,15 @@ i {
   display: flex;
   flex-direction: row;
 }
+
 .item1 {
   flex: 6;
 }
+
 .item2 {
   flex: 1;
 }
+
 .item3 {
   flex: 1;
 }
