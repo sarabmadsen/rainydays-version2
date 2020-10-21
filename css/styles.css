@@ -36,14 +36,6 @@ header img {
   width: 100%;
 }
 
-.menu {
-  background-color: #0b3a40;
-}
-
-li {
-  display: inline-block;
-}
-
 li a {
   color: white;
   text-transform: uppercase;
@@ -56,6 +48,21 @@ i {
 
 .current {
   text-decoration: underline;
+}
+
+.menu {
+  background-color: #0b3a40;
+  display: flex;
+  flex-direction: row;
+}
+.item1 {
+  flex: 6;
+}
+.item2 {
+  flex: 1;
+}
+.item3 {
+  flex: 1;
 }
 
 /*mobile styles*/
@@ -77,11 +84,12 @@ i {
     font-size: 1.6rem;
     padding: 5px;
     margin: 5px;
+    display: block;
   }
   i {
     font-size: 1.6rem;
-    padding: 5px;
-    margin: 5px;
+    padding: 10px;
+    margin: 10px;
   }
   body {
     background-color: gray;
@@ -91,20 +99,7 @@ i {
     display: none;
   }
   #hamburger-menu:checked ~ nav {
-    display: inline-block;
-  }
-  .menu {
-    display: flex;
-    flex-direction: row;
-  }
-  .item1 {
-    flex: 6;
-  }
-  .item2 {
-    flex: 1;
-  }
-  .item3 {
-    flex: 1;
+    display: block;
   }
 }
 
@@ -131,9 +126,12 @@ i {
     font-size: 2.5rem;
     padding: 10px;
     margin: 10px;
+    display: inline-block;
   }
   i {
     font-size: 2.5rem;
+    padding: 10px;
+    margin: 10px;
   }
   nav a {
     padding: 10px;
