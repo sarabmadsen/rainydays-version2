@@ -22,7 +22,7 @@ main img {
 @media only screen and (max-width: 659px) {
   main {
     display: grid;
-    grid-gap: 1em;
+    grid-gap: 1rem;
     grid-template-areas:
       "image1"
       "text1"

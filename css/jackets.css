@@ -1,7 +1,106 @@
 /*Global styles*/
 
+h1 {
+  grid-area: h1;
+}
+
+.image1 {
+  grid-area: image1;
+}
+
+.text1 {
+  grid-area: text1;
+}
+
+.add1 {
+  grid-area: add1;
+}
+
+.image2 {
+  grid-area: image2;
+}
+
+.text2 {
+  grid-area: text2;
+}
+
+.add2 {
+  grid-area: add2;
+}
+
+.image3 {
+  grid-area: image3;
+}
+
+.text3 {
+  grid-area: text3;
+}
+
+.add3 {
+  grid-area: add3;
+}
+
+.image4 {
+  grid-area: image4;
+}
+
+.text4 {
+  grid-area: text4;
+}
+
+.add4 {
+  grid-area: add4;
+}
+
+.image5 {
+  grid-area: image5;
+}
+
+.text5 {
+  grid-area: text5;
+}
+
+.add5 {
+  grid-area: add5;
+}
+
+.image6 {
+  grid-area: image6;
+}
+
+.text6 {
+  grid-area: text6;
+}
+
+.add6 {
+  grid-area: add6;
+}
+
+.search {
+  grid-area: search;
+}
+
 /*Mobile styles*/
 @media only screen and (max-width: 659px) {
+  main {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas:
+      "h1 h1"
+      "image1 image1"
+      "text1 add1"
+      "image2 image2"
+      "text2 add2"
+      "image3 image3"
+      "text3 add3"
+      "image4 image4"
+      "text4 add4"
+      "image5 image5"
+      "text5 add5"
+      "image6 image6"
+      "text6 add6"
+      "search search";
+  }
 }
 
 /*Desktop styles*/
