@@ -105,6 +105,13 @@ input {
       "text6 add6"
       "search search";
   }
+  main img {
+    width: 375px;
+    height: 280px;
+  }
+  .cover {
+    object-fit: cover;
+  }
 }
 
 /*Desktop styles*/
