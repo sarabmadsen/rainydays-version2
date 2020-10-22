@@ -76,12 +76,20 @@ h1 {
   grid-area: add6;
 }
 
+.search-heading {
+  grid-area: search-heading;
+}
+
 .search {
   grid-area: search;
 }
 
 input {
   display: block;
+}
+
+.cover {
+  object-fit: cover;
 }
 
 /*Mobile styles*/
@@ -103,17 +111,67 @@ input {
       "text5 add5"
       "image6 image6"
       "text6 add6"
+      "search-heading search-heading"
       "search search";
   }
   main img {
     width: 375px;
     height: 280px;
+    width: 100%;
   }
-  .cover {
-    object-fit: cover;
+  .add1,
+  .add2,
+  .add3,
+  .add4,
+  .add5,
+  .add6 {
+    margin: 1em;
+    padding: 1em;
   }
 }
 
-/*Desktop styles*/
-@media only screen and (min-width: 660px) {
+/*Desktop small styles*/
+@media only screen and (min-width: 660px) and (max-width: 1503px) {
+  main {
+    display: grid;
+    grid-gap: 1rem;
+    margin-bottom: 1rem;
+    grid-template-areas:
+      "h1 h1 h1 h1 search-heading search-heading"
+      "image1 text1 image2 text2 search search"
+      "image1 add1 image2 add2 search search"
+      "image3 text3 image4 text4 search search"
+      "image3 add3 image4 add4 search search"
+      "image5 text5 image6 text6 search search"
+      "image5 add5 image6 add6 search search";
+  }
+  main img {
+    width: 200px;
+    height: 279px;
+  }
+  .search-heading {
+    margin-top: 10px;
+  }
+}
+
+/*Desktop big styles*/
+@media only screen and (min-width: 1504px) {
+  main {
+    display: grid;
+    grid-gap: 1rem;
+    margin-bottom: 1rem;
+    grid-template-areas:
+      "h1 h1 h1 h1 h1 h1 search-heading search-heading"
+      "image1 text1 image2 text2 image3 text3 search search"
+      "image1 add1 image2 add2 image3 add3 search search"
+      "image4 text4 image5 text5 image6 text6 search search"
+      "image4 add4 image5 add5 image6 add6 search search";
+  }
+  main img {
+    width: 200px;
+    height: 279px;
+  }
+  .search-heading {
+    margin-top: 10px;
+  }
 }

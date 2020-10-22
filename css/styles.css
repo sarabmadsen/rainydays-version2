@@ -50,6 +50,12 @@ i {
   text-decoration: underline;
 }
 
+form {
+  background-color: #cfcfcf;
+  border: solid #0b3a40;
+  border-radius: 20px;
+}
+
 footer {
   background-color: #0b3a40;
   color: white;
