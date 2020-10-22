@@ -80,6 +80,10 @@ h1 {
   grid-area: search;
 }
 
+input {
+  display: block;
+}
+
 /*Mobile styles*/
 @media only screen and (max-width: 659px) {
   main {
