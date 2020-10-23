@@ -54,6 +54,19 @@ form {
   background-color: #cfcfcf;
   border: solid #0b3a40;
   border-radius: 20px;
+  padding: 1rem;
+}
+
+fieldset {
+  border: none;
+}
+
+input[type="submit"] {
+  color: white;
+  background-color: #0b3a40;
+  border: 2px solid #0b3a40;
+  padding: 5px 10px;
+  border-radius: 20px;
 }
 
 footer {
@@ -104,7 +117,7 @@ footer p {
     margin: 5px;
   }
   body {
-    background-color: grey;
+    background-color: lightgrey;
   }
   nav,
   #hamburger-menu {
@@ -194,5 +207,10 @@ footer p {
   }
   .item3 {
     flex: 1;
+  }
+  input[type="submit"]:hover {
+    background-color: white;
+    border: solid 2px #0b3a40;
+    color: #0b3a40;
   }
 }

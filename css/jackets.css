@@ -84,12 +84,21 @@ h1 {
   grid-area: search;
 }
 
-input {
-  display: block;
-}
-
 .cover {
   object-fit: cover;
+}
+
+form {
+  margin: 0 1em 1em 0;
+}
+
+.button {
+  background-color: #8f3e00;
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  border: solid 2px #8f3e00;
 }
 
 /*Mobile styles*/
@@ -130,12 +139,30 @@ input {
   }
 }
 
-/*Desktop small styles*/
-@media only screen and (min-width: 660px) and (max-width: 1503px) {
+/*Desktop styles*/
+@media only screen and (min-width: 660px) {
   main {
     display: grid;
-    grid-gap: 1rem;
+    grid-gap: 2rem 1rem;
     margin-bottom: 1rem;
+  }
+  main img {
+    width: 200px;
+    height: 279px;
+  }
+  .search-heading {
+    margin-top: 10px;
+  }
+  .button:hover {
+    color: #8f3e00;
+    background-color: white;
+    border: solid 2px #8f3e00;
+  }
+}
+
+/*Desktop small styles*/
+@media only screen and (min-width: 660px) and (max-width: 1534px) {
+  main {
     grid-template-areas:
       "h1 h1 h1 h1 search-heading search-heading"
       "image1 text1 image2 text2 search search"
@@ -145,33 +172,16 @@ input {
       "image5 text5 image6 text6 search search"
       "image5 add5 image6 add6 search search";
   }
-  main img {
-    width: 200px;
-    height: 279px;
-  }
-  .search-heading {
-    margin-top: 10px;
-  }
 }
 
 /*Desktop big styles*/
-@media only screen and (min-width: 1504px) {
+@media only screen and (min-width: 1535px) {
   main {
-    display: grid;
-    grid-gap: 1rem;
-    margin-bottom: 1rem;
     grid-template-areas:
       "h1 h1 h1 h1 h1 h1 search-heading search-heading"
       "image1 text1 image2 text2 image3 text3 search search"
       "image1 add1 image2 add2 image3 add3 search search"
       "image4 text4 image5 text5 image6 text6 search search"
       "image4 add4 image5 add5 image6 add6 search search";
-  }
-  main img {
-    width: 200px;
-    height: 279px;
-  }
-  .search-heading {
-    margin-top: 10px;
   }
 }
