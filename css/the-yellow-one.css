@@ -1,30 +1,8 @@
 /*Global styles*/
 
-h1 {
-  grid-area: h1;
-}
-
 .big {
   grid-area: big;
   max-width: 880px;
-  width: 100%;
-}
-
-.small1 {
-  grid-area: small1;
-  max-width: 200px;
-  width: 100%;
-}
-
-.small2 {
-  grid-area: small2;
-  max-width: 200px;
-  width: 100%;
-}
-
-.small3 {
-  grid-area: small3;
-  max-width: 200px;
   width: 100%;
 }
 
@@ -34,32 +12,45 @@ h1 {
   width: 100%;
 }
 
-.size {
-  grid-area: size;
-}
-
-.button {
-  grid-area: button;
-}
-
 .small-images {
   grid-area: small-images;
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.small1,
+.small2,
+.small3 {
+  max-width: 200px;
+  width: 100%;
+  flex: 1;
+  margin: 1rem 1rem 1rem 0;
+}
+
+.small3 {
+  margin: 1rem 0 1rem 0;
+}
+
+main {
+  display: grid;
+  grid-gap: 1rem;
+}
+
+h2 {
+  margin-top: 0;
 }
 
 /*Mobile styles*/
 
 @media only screen and (max-width: 659px) {
   main {
-    display: grid;
-    grid-gap: 1rem;
     grid-template-areas:
       "h1"
       "big"
       "small-images"
-      "text-area"
-      "size"
-      "button";
+      "text-area";
   }
 }
 
@@ -67,13 +58,10 @@ h1 {
 
 @media only screen and (min-width: 660px) {
   main {
-    display: grid;
-    grid-gap: 1rem;
     grid-template-areas:
       "h1 h1"
       "big text-area"
-      "big text-area"
-      "big size"
-      "small-images button";
+      "small-images text-area"
+      ". text-area";
   }
 }
