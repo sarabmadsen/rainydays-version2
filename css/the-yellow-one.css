@@ -54,12 +54,12 @@ h1 {
     display: grid;
     grid-gap: 1rem;
     grid-template-areas:
-      "h1 h1 h1"
-      "big big big"
-      "small1 small2 small3"
-      "text-area text-area text-area"
-      "size size size"
-      "button button button";
+      "h1"
+      "big"
+      "small-images"
+      "text-area"
+      "size"
+      "button";
   }
 }
 
