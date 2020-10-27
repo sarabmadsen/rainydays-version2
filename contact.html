@@ -45,62 +45,43 @@
     <main>
       <section class="contact-area">
         <h1>Contact</h1>
-        <img class="contact" src="images/contact.jpg" alt="Man hiking" />
+        <img class="image" src="images/contact.jpg" alt="Man hiking" />
         <div class="details">
           <p>Mail: Contact@rainydays.com</p>
           <p>Phone: 12345678</p>
           <p>Address: Rainy street 27</p>
         </div>
       </section>
-      <section class="form-area">
-        <h2>Contact form</h2>
-        <form action="form-success.php" method="POST">
-          <fieldset>
-            <label for="name">Full name</label>
-            <input
-              type="text"
-              name="name"
-              id="name"
-              class="form__input"
-              required
-            />
-            <label for="email">Email address</label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              class="form__input"
-              required
-            />
-            <label for="message">Write your message here</label>
-            <textarea
-              id="message"
-              name="message"
-              rows="5"
-              cols="30"
-              class="form__input"
-              required
-            ></textarea>
-            <label for="accept">I accept the terms & conditions</label>
-            <input
-              type="checkbox"
-              id="accept"
-              name="accept"
-              value="accept"
-              required
-            />
+      <h2 class="h2form">Contact form</h2>
+      <form action="form-success.php" method="POST">
+        <fieldset>
+          <label for="name">Full name</label>
+          <input type="text" name="name" id="name" class="form__input" required />
+          <label for="email">Email address</label>
+          <input type="email" name="email" id="email" class="form__input" required />
+          <label for="message">Write your message here</label>
+          <textarea id="message" name="message" rows="5" cols="30" class="form__input" required ></textarea>
+          <label for="accept">I accept the terms & conditions</label>
+          <input type="checkbox" id="accept" name="accept" value="accept" required />
           </fieldset>
           <input type="submit" value="Send" />
-        </form>
-      </section>
-      <section class="some-area">
+      </form>
+      <section class="h2some">
         <h2>Follow us</h2>
-        <img src="images/facebook.jpg" alt="Person skiing" />
-        <p>Facebook</p>
-        <img src="images/instagram.jpg" alt="Person climbing on rocks" />
-        <p>Instagram</p>
-        <img src="images/twitter.jpg" alt="Person looking at view" />
-        <p>Twitter</p>
+      </section>
+      <section class="some">
+        <div class="box">
+          <img src="images/facebook.jpg" alt="Person skiing" />
+          <p>Facebook</p>
+        </div>
+        <div class="box">
+          <img src="images/instagram.jpg" alt="Person climbing on rocks" />
+          <p>Instagram</p>
+        </div>
+        <div class="box">
+          <img src="images/twitter.jpg" alt="Person looking at view" />
+          <p>Twitter</p>
+        </div>
       </section>
     </main>
     <footer>

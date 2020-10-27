@@ -1,9 +1,89 @@
 /*Global styles*/
 
+h1 {
+  grid-area: h1;
+}
+
+.image {
+  grid-area: image;
+  max-width: 880px;
+  width: 100%;
+}
+
+.details {
+  grid-area: details;
+}
+
+.h2form {
+  grid-area: h2form;
+}
+
+form {
+  grid-area: form;
+  margin: 1rem;
+}
+
+.h2some {
+  grid-area: h2some;
+}
+
+.some {
+  grid-area: some;
+}
+
+main {
+  display: grid;
+  grid-gap: 1rem;
+}
+
+.form__input {
+  display: block;
+}
+
+.some img {
+  max-width: 180px;
+  width: 100%;
+}
+
+.some p {
+  text-align: center;
+}
+
 /*Mobile styles*/
 @media only screen and (max-width: 659px) {
+  main {
+    grid-template-areas:
+      "h1"
+      "image"
+      "details"
+      "h2form"
+      "form"
+      "h2some"
+      "some";
+  }
+  .some {
+    margin: 0 auto;
+  }
 }
 
 /*Desktop styles*/
 @media only screen and (min-width: 660px) {
+  main {
+    grid-template-areas:
+      "h1 h2form"
+      "image form"
+      "details ."
+      "h2some h2some"
+      "some some";
+  }
+  .some {
+    display: flex;
+    flex-direction: row;
+  }
+  .box {
+    margin: 1rem;
+  }
+  .image {
+    min-width: 300px;
+  }
 }
