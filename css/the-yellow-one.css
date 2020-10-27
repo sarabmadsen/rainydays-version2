@@ -31,6 +31,9 @@ h1 {
 .button {
   grid-area: button;
 }
+.small-images {
+  grid-area: small-images;
+}
 
 .big {
   max-width: 200px;
@@ -53,4 +56,11 @@ h1 {
 
 /*Desktop styles*/
 @media only screen and (min-width: 660px) {
+  main {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas:
+      "h1 h1"
+      "big text-area";
+  }
 }
