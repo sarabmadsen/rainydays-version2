@@ -6,22 +6,32 @@ h1 {
 
 .big {
   grid-area: big;
+  max-width: 880px;
+  width: 100%;
 }
 
 .small1 {
   grid-area: small1;
+  max-width: 200px;
+  width: 100%;
 }
 
 .small2 {
   grid-area: small2;
+  max-width: 200px;
+  width: 100%;
 }
 
 .small3 {
   grid-area: small3;
+  max-width: 200px;
+  width: 100%;
 }
 
 .text-area {
   grid-area: text-area;
+  max-width: 880px;
+  width: 100%;
 }
 
 .size {
@@ -31,15 +41,14 @@ h1 {
 .button {
   grid-area: button;
 }
+
 .small-images {
   grid-area: small-images;
-}
-
-.big {
-  max-width: 200px;
+  width: 100%;
 }
 
 /*Mobile styles*/
+
 @media only screen and (max-width: 659px) {
   main {
     display: grid;
@@ -55,12 +64,16 @@ h1 {
 }
 
 /*Desktop styles*/
+
 @media only screen and (min-width: 660px) {
   main {
     display: grid;
     grid-gap: 1rem;
     grid-template-areas:
       "h1 h1"
-      "big text-area";
+      "big text-area"
+      "big text-area"
+      "big size"
+      "small-images button";
   }
 }
