@@ -1,5 +1,9 @@
 /*Global styles*/
 
+h1 {
+  grid-area: h1;
+}
+
 .big {
   grid-area: big;
   max-width: 880px;
@@ -42,6 +46,41 @@ h2 {
   margin-top: 0;
 }
 
+.size {
+  padding: 1rem 0 1rem 0;
+}
+
+.size-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.box {
+  margin: 1rem 0.5rem;
+  padding: 1rem;
+  border: #0b3a40 solid 2px;
+}
+
+.box:active {
+  background-color: #0b3a40;
+  color: white;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.button {
+  background-color: #8f3e00;
+  padding: 15px;
+  margin: 2rem 2rem 5rem 0;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  border: solid 2px #8f3e00;
+}
+
 /*Mobile styles*/
 
 @media only screen and (max-width: 659px) {
@@ -63,5 +102,14 @@ h2 {
       "big text-area"
       "small-images text-area"
       ". text-area";
+  }
+  .box:hover {
+    background-color: #0b3a40;
+    color: white;
+  }
+  .button:hover {
+    color: #8f3e00;
+    background-color: white;
+    border: solid 2px #8f3e00;
   }
 }
