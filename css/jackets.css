@@ -102,6 +102,7 @@ form {
 }
 
 /*Mobile styles*/
+
 @media only screen and (max-width: 659px) {
   main {
     display: grid;
@@ -140,6 +141,7 @@ form {
 }
 
 /*Desktop styles*/
+
 @media only screen and (min-width: 660px) {
   main {
     display: grid;
@@ -161,7 +163,29 @@ form {
 }
 
 /*Desktop small styles*/
-@media only screen and (min-width: 660px) and (max-width: 1534px) {
+
+@media only screen and (min-width: 660px) and (max-width: 1093px) {
+  main {
+    grid-template-areas:
+      "h1 h1 search-heading search-heading"
+      "image1 text1 search search"
+      "image1 add1 search search"
+      "image2 text2 search search"
+      "image2 add2 search search"
+      "image3 text3 search search"
+      "image3 add3 search search"
+      "image4 text4 search search"
+      "image4 add4 search search"
+      "image5 text5 search search"
+      "image5 add5 search search"
+      "image6 text6 search search"
+      "image6 add6 search search";
+  }
+}
+
+/*Desktop medium styles*/
+
+@media only screen and (min-width: 1094px) and (max-width: 1534px) {
   main {
     grid-template-areas:
       "h1 h1 h1 h1 search-heading search-heading"
@@ -175,6 +199,7 @@ form {
 }
 
 /*Desktop big styles*/
+
 @media only screen and (min-width: 1535px) {
   main {
     grid-template-areas:
