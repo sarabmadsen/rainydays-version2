@@ -3,12 +3,15 @@
 .image1 {
   grid-area: image1;
 }
+
 .text1 {
   grid-area: text1;
 }
+
 .image2 {
   grid-area: image2;
 }
+
 .text2 {
   grid-area: text2;
 }
@@ -16,6 +19,20 @@
 main img {
   max-width: 880px;
   width: 100%;
+}
+
+.button {
+  background: rgb(107, 51, 8);
+  background: linear-gradient(
+    0deg,
+    rgba(107, 51, 8, 1) 0%,
+    rgba(143, 62, 0, 1) 51%
+  );
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  border: solid 2px #8f3e00;
 }
 
 /*Mobile styles*/
@@ -63,5 +80,10 @@ main img {
   }
   .text2 {
     text-align: right;
+  }
+  .button:hover {
+    color: #8f3e00;
+    background-color: white;
+    border: solid 2px #8f3e00;
   }
 }
