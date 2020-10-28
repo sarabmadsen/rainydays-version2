@@ -1,5 +1,66 @@
 /*Global styles*/
 
+h1 {
+  grid-area: h1;
+}
+
+.image {
+  grid-area: image;
+}
+
+.cover {
+  object-fit: cover;
+}
+
+main img {
+  width: 200px;
+  height: 279px;
+}
+
+.product {
+  grid-area: product;
+}
+
+.summary {
+  grid-area: summary;
+}
+
+.button {
+  grid-area: button;
+}
+
+h2 {
+  grid-area: h2;
+}
+
+.form__input {
+  display: block;
+}
+
+label,
+input {
+  margin: 1rem 0;
+}
+
+input[type="text"],
+input[type="email"] {
+  border: solid #0b3a40;
+  border-radius: 20px;
+  width: 263px;
+  min-height: 30px;
+}
+
+form {
+  grid-area: form;
+  margin: 0;
+  max-width: 500px;
+  max-height: 500px;
+}
+
+.product i {
+  color: #0b3a40;
+}
+
 /*Mobile styles*/
 @media only screen and (max-width: 659px) {
 }

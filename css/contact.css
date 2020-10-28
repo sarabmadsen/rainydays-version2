@@ -20,7 +20,9 @@ h1 {
 
 form {
   grid-area: form;
-  margin: 1rem;
+  margin: 0;
+  max-width: 500px;
+  max-height: 500px;
 }
 
 .h2some {
@@ -49,6 +51,29 @@ main {
   text-align: center;
 }
 
+.details i {
+  color: #0b3a40;
+}
+
+.details p {
+  display: inline-block;
+}
+
+label,
+input,
+textarea {
+  margin: 1rem 0;
+}
+
+textarea,
+input[type="text"],
+input[type="email"] {
+  border: solid #0b3a40;
+  border-radius: 20px;
+  width: 263px;
+  min-height: 30px;
+}
+
 /*Mobile styles*/
 @media only screen and (max-width: 659px) {
   main {
@@ -72,7 +97,7 @@ main {
     grid-template-areas:
       "h1 h2form"
       "image form"
-      "details ."
+      "details form"
       "h2some h2some"
       "some some";
   }

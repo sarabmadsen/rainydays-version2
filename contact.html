@@ -43,15 +43,13 @@
       </section>
     </header>
     <main>
-      <section class="contact-area">
-        <h1>Contact</h1>
-        <img class="image" src="images/contact.jpg" alt="Man hiking" />
-        <div class="details">
-          <p>Mail: Contact@rainydays.com</p>
-          <p>Phone: 12345678</p>
-          <p>Address: Rainy street 27</p>
-        </div>
-      </section>
+      <h1>Contact</h1>
+      <img class="image" src="images/contact.jpg" alt="Man hiking" />
+      <div class="details">
+        <p><i class="fas fa-at"></i>Contact@rainydays.com</p>
+        <p><i class="fas fa-phone"></i>12345678</p>
+        <p><i class="fas fa-home"></i>Rainy street 27</p>
+      </div>
       <h2 class="h2form">Contact form</h2>
       <form action="form-success.php" method="POST">
         <fieldset>
@@ -61,8 +59,8 @@
           <input type="email" name="email" id="email" class="form__input" required />
           <label for="message">Write your message here</label>
           <textarea id="message" name="message" rows="5" cols="30" class="form__input" required ></textarea>
-          <label for="accept">I accept the terms & conditions</label>
           <input type="checkbox" id="accept" name="accept" value="accept" required />
+          <label for="accept">I accept the terms & conditions</label>
           </fieldset>
           <input type="submit" value="Send" />
       </form>

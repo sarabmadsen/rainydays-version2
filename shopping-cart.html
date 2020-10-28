@@ -40,51 +40,39 @@
       </section>
     </header>
     <main>
-      <section>
-        <h1>Shopping cart</h1>
+      <h1>Shopping cart</h1>
+      <section class="image">
+        <img class="cover" src="images/the-yellow-one2.jpg" alt="The yellow one">
       </section>
-      <section>
-        <h2>Checkout</h2>
-        <form action="form-success.php" method="POST">
-          <fieldset>
-            <label for="name">Full name</label>
-            <input
-              type="text"
-              name="name"
-              id="name"
-              class="form__input"
-              required
-            />
-            <label for="address">Shipping address</label>
-            <input
-              type="text"
-              name="address"
-              id="address"
-              class="form__input"
-              required
-            />
-            <label for="email">Email address</label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              class="form__input"
-              required
-            />
-            <label for="code">Discount code</label>
-            <input type="text" name="code" id="code" class="form__input" />
-            <label for="accept">I accept the terms & conditions</label>
-            <input
-              type="checkbox"
-              id="accept"
-              name="accept"
-              value="accept"
-              required
-            />
-          </fieldset>
-          <input type="submit" value="Continue to payment" />
-        </form>
+      <section class="product">
+        <p>The Yellow One</p>
+        <p>NOK 599,-</p>
+        <p>Size: Medium</p>
+        <i class="fas fa-trash-alt"></i>
       </section>
+      <section class="summary">
+        <p>Free shipping.</p>
+        <p>Total amount: NOK 599,-</p>
+      </section>
+      <section class="button">
+        <a href="jackets.html">Continue shopping</a>
+      </section>
+      <h2>Checkout</h2>
+      <form action="form-success.php" method="POST">
+        <fieldset>
+          <label for="name">Full name</label>
+          <input type="text" name="name" id="name" class="form__input" required />
+          <label for="address">Shipping address</label>
+          <input type="text" name="address" id="address" class="form__input" required />
+          <label for="email">Email address</label>
+          <input type="email" name="email" id="email" class="form__input" required />
+          <label for="code">Discount code</label>
+          <input type="text" name="code" id="code" class="form__input" />
+          <input type="checkbox" id="accept" name="accept" value="accept" required />
+          <label for="accept">I accept the terms & conditions</label>
+        </fieldset>
+        <input type="submit" value="Continue to payment" />
+      </form>
     </main>
     <footer>
       <p>Copyright &copy</p>
