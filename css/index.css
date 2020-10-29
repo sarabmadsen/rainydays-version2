@@ -21,6 +21,11 @@ main img {
   width: 100%;
 }
 
+.link {
+  display: block;
+  margin: 0.5rem 0;
+}
+
 .button {
   background: linear-gradient(
     0deg,
@@ -34,6 +39,8 @@ main img {
   border-radius: 25px;
   border: solid 2px #8f3e00;
   display: block;
+  width: 90px;
+  text-align: center;
   margin: auto;
 }
 
@@ -55,6 +62,10 @@ main img {
   h2,
   h3 {
     text-align: center;
+  }
+  .link {
+    width: 80px;
+    margin: 0 auto 1rem auto;
   }
 }
 
