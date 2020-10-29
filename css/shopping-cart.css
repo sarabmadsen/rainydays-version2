@@ -2,7 +2,6 @@
 
 main {
   max-width: 1000px;
-  margin: 0 auto;
 }
 
 h1 {
@@ -40,10 +39,10 @@ main img {
 }
 
 .button a {
-  background: rgb(34, 45, 16);
+  background: rgb(7, 32, 13);
   background: linear-gradient(
     0deg,
-    rgba(34, 45, 16, 1) 19%,
+    rgba(7, 32, 13, 1) 0%,
     rgba(12, 56, 22, 1) 51%
   );
   box-shadow: 2px 5px 16px 0px #0b325e, 5px 5px 15px 5px rgba(0, 0, 0, 0);
@@ -90,6 +89,18 @@ form {
 main {
   display: grid;
   grid-gap: 1rem;
+}
+
+.checkout-success {
+  text-align: center;
+  border: #0b3a40 2px solid;
+  border-radius: 25px;
+  padding: 1rem;
+  display: none;
+}
+
+.checkout-success i {
+  color: #0b3a40;
 }
 
 /*Mobile styles*/
