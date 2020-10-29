@@ -96,11 +96,18 @@ main {
   border: #0b3a40 2px solid;
   border-radius: 25px;
   padding: 1rem;
+  margin: 1rem 0;
   display: none;
+  grid-area: checkout-success;
 }
 
 .checkout-success i {
   color: #0b3a40;
+  padding: 0 1rem 1rem 1rem;
+}
+
+.x {
+  text-align: right;
 }
 
 #checkout {
@@ -108,7 +115,7 @@ main {
 }
 
 #checkout:checked ~ .checkout-success {
-  display: contents;
+  display: block;
 }
 
 .checkout-button {
@@ -116,19 +123,25 @@ main {
   background-color: #0b3a40;
   border: 2px solid #0b3a40;
   padding: 5px 10px;
+  margin-bottom: 1rem;
   border-radius: 20px;
+  max-width: 160px;
+  text-align: center;
+  grid-area: checkout-button;
 }
 
 /*Mobile styles*/
 @media only screen and (max-width: 659px) {
   main {
     grid-template-areas:
+      "checkout-success checkout-success"
       "h1 h1"
       "image product"
       "summary summary"
       "button button"
       "h2 h2"
-      "form form";
+      "form form"
+      "checkout-button checkout-button";
   }
 }
 
@@ -136,10 +149,12 @@ main {
 @media only screen and (min-width: 660px) {
   main {
     grid-template-areas:
+      "checkout-success checkout-success checkout-success checkout-success checkout-success"
       "h1 h1 . h2 h2"
       "image product . form form"
       "summary summary . form form"
-      "button button . form form";
+      "button button . form form"
+      "button button . checkout-button checkout-button";
   }
   .product i {
     font-size: 1.4rem;
@@ -151,5 +166,8 @@ main {
     color: #0c3816;
     background: white;
     border: solid 2px #0c3816;
+  }
+  .checkout-success {
+    min-height: 1000px;
   }
 }
