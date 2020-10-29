@@ -56,6 +56,10 @@ main img {
   h3 {
     text-align: center;
   }
+  a {
+    display: block;
+    margin: auto;
+  }
 }
 
 /*Desktop styles*/
