@@ -103,6 +103,14 @@ main {
   color: #0b3a40;
 }
 
+#checkout {
+  display: none;
+}
+
+#checkout:checked ~ .checkout-success {
+  display: contents;
+}
+
 /*Mobile styles*/
 @media only screen and (max-width: 659px) {
   main {
