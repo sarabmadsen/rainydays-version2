@@ -27,14 +27,14 @@ main img {
     rgba(107, 51, 8, 1) 0%,
     rgba(143, 62, 0, 1) 51%
   );
-  -webkit-box-shadow: 2px 5px 16px 0px #0b325e,
-    5px 5px 15px 5px rgba(0, 0, 0, 0);
   box-shadow: 2px 5px 16px 0px #0b325e, 5px 5px 15px 5px rgba(0, 0, 0, 0);
   padding: 10px 30px;
   color: white;
   text-decoration: none;
   border-radius: 25px;
   border: solid 2px #8f3e00;
+  display: block;
+  margin: auto;
 }
 
 /*Mobile styles*/
@@ -55,10 +55,6 @@ main img {
   h2,
   h3 {
     text-align: center;
-  }
-  a {
-    display: block;
-    margin: auto;
   }
 }
 
