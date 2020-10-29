@@ -50,6 +50,11 @@ i {
   text-decoration: underline;
 }
 
+main {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
 form {
   background-color: #cfcfcf;
   border: solid #0b3a40;
