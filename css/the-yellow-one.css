@@ -18,7 +18,6 @@ h1 {
 
 .small-images {
   grid-area: small-images;
-  width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -107,7 +106,7 @@ h2 {
       "h1 h1"
       "big text-area"
       "small-images text-area"
-      ". text-area";
+      "small-images text-area";
   }
   .box:hover {
     background-color: #0b3a40;
