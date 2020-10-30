@@ -84,7 +84,8 @@ footer {
   align-items: center;
 }
 footer p {
-  flex: 10;
+  flex: 20;
+  margin: 0 0 0 1rem;
 }
 
 .footer-symbol1 {
