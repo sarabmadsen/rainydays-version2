@@ -22,7 +22,7 @@ form {
   grid-area: form;
   margin: 0;
   max-width: 500px;
-  max-height: 500px;
+  max-height: 550px;
 }
 
 .h2some {
@@ -40,6 +40,24 @@ main {
 
 .form__input {
   display: block;
+}
+
+.form-error {
+  display: none;
+  color: red;
+  margin-bottom: 15px;
+  width: 100%;
+  max-width: 350px;
+}
+
+.sentMessage {
+  display: none;
+  background-color: lightgreen;
+  margin-bottom: 15px;
+  border-radius: 20px;
+  padding: 10px 5px;
+  width: 100%;
+  max-width: 350px;
 }
 
 .some img {

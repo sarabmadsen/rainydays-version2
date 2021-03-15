@@ -65,16 +65,29 @@
       <h2 class="h2form">Contact form</h2>
       <form action="form-success.php" method="POST">
         <fieldset>
-          <label for="name">Full name</label>
-          <input type="text" name="name" id="name" class="form__input" required />
-          <label for="email">Email address</label>
-          <input type="email" name="email" id="email" class="form__input" required />
-          <label for="message">Write your message here</label>
-          <textarea id="message" name="message" rows="5" cols="30" class="form__input" required ></textarea>
-          <input type="checkbox" id="accept" name="accept" value="accept" required />
-          <label for="accept">I accept the terms & conditions</label>
-          </fieldset>
-          <input type="submit" value="Send" />
+          <div class="sentMessage">Your message has been sent!</div>
+          <div>
+            <label for="name">Full name</label>
+            <input type="text" name="name" id="name" class="form__input"/>
+            <div class="form-error" id="nameError">Please enter your full name</div>
+          </div>
+          <div>
+            <label for="email">Email address</label>
+            <input type="email" name="email" id="email" class="form__input"/>
+            <div class="form-error" id="emailError">Please enter a valid email address</div>
+          </div>
+          <div>
+            <label for="message">Write your message here</label>
+            <textarea id="message" name="message" rows="5" cols="30" class="form__input"></textarea>
+            <div class="form-error" id="messageError">Please enter a message</div>
+          </div>
+          <div>
+            <input type="checkbox" id="accept" name="accept" value="accept"/>
+            <label for="accept">I accept the terms & conditions</label>
+            <div class="form-error" id="checkboxError">Please accept our terms & conditions</div>
+          </div>
+        </fieldset>
+        <input type="submit" value="Send" />
       </form>
       <section class="h2some">
         <h2>Follow us</h2>
@@ -103,5 +116,6 @@
           <i class="fab fa-facebook"></i>
       </div>
     </footer>
+    <script src="js/contact.js"></script>
   </body>
 </html>

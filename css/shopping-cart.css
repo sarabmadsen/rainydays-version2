@@ -79,7 +79,15 @@ form {
   grid-area: form;
   margin: 0 0 1rem 0;
   max-width: 500px;
-  max-height: 500px;
+  max-height: 600px;
+}
+
+.form-error {
+  display: none;
+  color: red;
+  margin-bottom: 15px;
+  width: 100%;
+  max-width: 350px;
 }
 
 .product i {
@@ -108,14 +116,6 @@ main {
 
 .x {
   text-align: right;
-}
-
-#checkout {
-  display: none;
-}
-
-#checkout:checked ~ .checkout-success {
-  display: block;
 }
 
 .checkout-button {
