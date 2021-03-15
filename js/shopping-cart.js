@@ -44,6 +44,7 @@ function validateForm(event) {
 
     if (checkLength(fullName.value, 1) && checkLength(address.value, 5) && validateEmail(email.value) && checkbox.checked) {
         checkoutMessage.style.display = "block";
+        
         form.reset();
     } else {
         checkoutMessage.style.display = "none";
