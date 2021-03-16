@@ -17,9 +17,8 @@
 }
 
 main img {
-  max-width: 880px;
   width: 100%;
-}
+} 
 
 .link {
   display: block;
@@ -73,7 +72,7 @@ main img {
 @media only screen and (min-width: 660px) {
   main {
     display: grid;
-    grid-gap: 1rem;
+    grid-gap: 3rem;
     grid-template-areas:
       "image1 text1"
       "text2 image2";
@@ -109,4 +108,5 @@ main img {
     margin-top: 0.5rem;
     display: inline-block;
   }
+
 }
