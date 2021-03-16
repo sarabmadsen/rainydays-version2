@@ -1,26 +1,27 @@
 /*Global styles*/
 
+main {
+  grid-gap: 1rem;
+  margin-bottom: 2rem;
+}
+
 h1 {
-  grid-area: h1;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.main-content {
+  display: flex;
+}
+
+.images {
+  max-width: 880px;
+  width: 100%;
 }
 
 .big {
-  grid-area: big;
   max-width: 880px;
   width: 100%;
-}
-
-.text-area {
-  grid-area: text-area;
-  max-width: 880px;
-  width: 100%;
-}
-
-.small-images {
-  grid-area: small-images;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
 }
 
 .small1,
@@ -28,7 +29,6 @@ h1 {
 .small3 {
   max-width: 200px;
   width: 100%;
-  flex: 1;
   margin: 1rem 1rem 1rem 0;
 }
 
@@ -36,10 +36,11 @@ h1 {
   margin: 1rem 0 1rem 0;
 }
 
-main {
-  display: grid;
-  grid-gap: 1rem;
-  margin-bottom: 2rem;
+
+.text-area {
+  max-width: 880px;
+  width: 100%;
+  margin-left: 1rem;
 }
 
 h2 {
@@ -86,35 +87,25 @@ h2 {
   border: solid 2px #8f3e00;
 }
 
-/*Mobile styles*/
-
-@media only screen and (max-width: 659px) {
-  main {
-    grid-template-areas:
-      "h1"
-      "big"
-      "small-images"
-      "text-area";
+  /*Mobile styles*/
+  
+  @media only screen and (max-width: 659px) {
+    .main-content {
+      display: flex;
+      flex-direction: column;
+    }
   }
-}
-
-/*Desktop styles*/
-
-@media only screen and (min-width: 660px) {
-  main {
-    grid-template-areas:
-      "h1 h1"
-      "big text-area"
-      "small-images text-area"
-      "small-images text-area";
+  
+  /*Desktop styles*/
+  
+  @media only screen and (min-width: 660px) {
+    .box:hover {
+      background-color: #0b3a40;
+      color: white;
+    }
+    .button:hover {
+      color: #8f3e00;
+      background: white;
+      border: solid 2px #8f3e00;
+    }
   }
-  .box:hover {
-    background-color: #0b3a40;
-    color: white;
-  }
-  .button:hover {
-    color: #8f3e00;
-    background: white;
-    border: solid 2px #8f3e00;
-  }
-}
