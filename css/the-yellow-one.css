@@ -62,7 +62,7 @@ h2 {
   border: #0b3a40 solid 2px;
 }
 
-.box:active {
+button:active {
   background-color: #0b3a40;
   color: white;
 }
@@ -72,11 +72,7 @@ h2 {
 }
 
 .button {
-  background: linear-gradient(
-    0deg,
-    rgba(107, 51, 8, 1) 0%,
-    rgba(143, 62, 0, 1) 51%
-  );
+  background: #8f3e00;
   box-shadow: 2px 5px 16px 0px #0b325e, 5px 5px 15px 5px rgba(0, 0, 0, 0);
   padding: 15px;
   margin: 2rem 2rem 5rem 0;

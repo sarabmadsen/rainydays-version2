@@ -40,11 +40,7 @@ main img {
 
 .button a {
   background: rgb(7, 32, 13);
-  background: linear-gradient(
-    0deg,
-    rgba(7, 32, 13, 1) 0%,
-    rgba(12, 56, 22, 1) 51%
-  );
+  background: #0c3816;
   box-shadow: 2px 5px 16px 0px #0b325e, 5px 5px 15px 5px rgba(0, 0, 0, 0);
   padding: 15px;
   color: white;
