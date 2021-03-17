@@ -71,7 +71,4 @@ main {
   .image {
     min-width: 300px;
   }
-  .some img:hover {
-    border: lightcoral, 5px, solid;
-  }
 }

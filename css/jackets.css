@@ -110,6 +110,24 @@ form {
   display: none;
 }
 
+.stars i {
+  color: #0b3a40;
+  font-size: 1rem;
+  padding: 0;
+  margin: 17px 0 0 0;
+}
+
+.stars p {
+  color: #0b3a40;
+  font-size: 1rem;
+  margin-left: 5px;
+}
+
+.stars {
+  display: flex;
+  flex-direction: row;
+}
+
 /*Mobile styles*/
 
 @media only screen and (max-width: 659px) {
@@ -168,6 +186,9 @@ form {
     color: #8f3e00;
     background: white;
     border: solid 2px #8f3e00;
+  }
+  h2 {
+    font-size: 1.5rem;
   }
 }
 
