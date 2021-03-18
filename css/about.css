@@ -37,6 +37,8 @@ main {
   grid-gap: 1rem;
 }
 
+
+
 /*Mobile styles*/
 @media only screen and (max-width: 659px) {
   main {
@@ -70,5 +72,8 @@ main {
   }
   .image {
     min-width: 300px;
+  }
+  .some img:hover {
+    filter: opacity(70%);
   }
 }
