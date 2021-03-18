@@ -7,3 +7,4 @@ submitButton.addEventListener("click", createHTML);
 function createHTML() {
     error.style.display = "block";
 }
+
